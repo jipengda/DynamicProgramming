@@ -19,6 +19,8 @@ import numpy as np
 def lis(a):
     n = length(a)
     d = np.zeros(n+1, int)
+    for i in range(n+1):
+        d[i] = 1
     for i in range(0, n):
         for j in range(0, i):
             if (a[j] < a[i]):
