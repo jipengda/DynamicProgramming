@@ -1,13 +1,13 @@
-#the departure node 0
+# the departure node 0
 
-#first iteration k=1:
+# first iteration k=1:
 #    generate states made up of routes visiting a single node from among the origins
 
-#each subsequent iteration k(1<k<2n+1):
+# each subsequent iteration k(1<k<2n+1):
 #    the states are constructed from the states of previous iteration and are made up of
 #    routes visiting one additional node from among the origins and destinations
 
-#last iteration k=2n+1:
+# last iteration k=2n+1:
 #    the vehicle must go to the arrival node 2n+1
 
 #iteration k(1, 2n+1) define a state(S, i)
