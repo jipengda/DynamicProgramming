@@ -1,9 +1,12 @@
 # the departure node 0
 
+<<<<<<< HEAD
+=======
 depot = 0
 
 n=10
 N = 2*n + 1
+>>>>>>> fcb0e0e248907a2f22944e5baa7b5196c3c3e618
 # first iteration k=1:
 #    generate states made up of routes visiting a single node from among the origins
 for iteration in range(N):
@@ -12,13 +15,19 @@ for iteration in range(N):
 
 
 # each subsequent iteration k(1<k<2n+1):
+<<<<<<< HEAD
+=======
     if iteration > 1 and iteration<= N:
+>>>>>>> fcb0e0e248907a2f22944e5baa7b5196c3c3e618
 #    the states are constructed from the states of previous iteration and are made up of
 #    routes visiting one additional node from among the origins and destinations
         construct states(one additional node)
 
 # last iteration k=2n+1:
+<<<<<<< HEAD
+=======
     if iteration == 2 and iteration<= N:
+>>>>>>> fcb0e0e248907a2f22944e5baa7b5196c3c3e618
 #    the vehicle must go to the arrival node 2n+1
         vehicle go to the arrival node
 
