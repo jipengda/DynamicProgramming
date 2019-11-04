@@ -59,7 +59,7 @@ if(there exists another label with both a lesser time and a lesser constructed):
 if(labels are placed in a list with times in strictly increasing order):
     eliminate a label
 # The first iteration is carried out by visiting the origins from node 0 resulting in the set of states
-# At subsequent iterations new states by adding one node to the toal visited at the preceding iteration
+# At subsequent iterations new states by adding one node to the total visited at the preceding iteration
 # At the final iteration, there is only one state. All nodes have been visited from the departure point to the arrival point
 # The minimum value of the objective function is given in the label with the smallest cost, i.e., the last in the list. If this set is non-empty.
 # If the set is empty, the problem is infeasible; this can be detected at any given iteration if no labels are created.
