@@ -49,5 +49,10 @@ def add_Node(start, iteration, SETS):
         # For each set, I hope to use different LABEL'S Number to differentiate.
         # Accrodingly, I need to add terminal nodes, LABELS(time, cost), and
         # PRECEDING LABEL NUMBER for each set, too
+        # Nigara Falls this Saturday, plz give me power. Thanks
+        # if specific condition is satisfied, then add_Node
+        # specific condition, new node must be different,
+        # new node must have connection with current node
         
+
     return SETS
