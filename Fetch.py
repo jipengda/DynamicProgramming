@@ -34,6 +34,12 @@ def list_all_sets(graph, iteration):
                     set1 = set
                     node = node + 1
                     if(i != 0):
+                        # I probably should add criterion function here
+                        # I guess def criterion(graph, set1, node)
+                        # And return value is True table value
+                        # If True table value is True, set1 = set + [node]
+                        # sets.append(sets)
+                        # If True table value is False, just pass(go back to steps before 36)
                         if node not in set:
                             set1 = set + [node]
                             sets.append(set1)

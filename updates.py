@@ -56,6 +56,7 @@ def criterion(sets):
             m=CRLF[i]
             n=CRLF[i+1]
             time = time + graph[m][n]
+            timecost = time
             time = max(time, timeInfor[n][0])
             print(time)
         # I forget to make comparision between time and upper bound of node
