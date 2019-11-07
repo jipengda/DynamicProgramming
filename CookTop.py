@@ -1,7 +1,7 @@
 # I hope to add label number, label infor(time, cost) to each feasible route
 # The basic part is from China.py
 # I need to edit script around append part to store label number, label infor which I request
-def list_all_sets(graph, timeInfor, n, iteration):
+def list_all_sets(graph, timeInfor, requests, iteration):
     source=[0]
     sets=[]
     row = source[-1]
@@ -60,7 +60,7 @@ def criterion(graph, timeInfor, source, set1, node, requests):
     if node in source:
         trueTableValue = True
         return trueTableValue
-    if node-n not in source and node >= requests: # I hope to stop destination 5 appear early before iteration 5
+    if node-requests not in source and node >= requests: # I hope to stop destination 5 appear early before iteration 5
         trueTableValue = True
         return trueTableValue
     memory=set1
