@@ -91,7 +91,7 @@ def criterion(graph, timeInfor, source, set1, node, requests):
         time=max(time, timeInfor[node][0])
         m=node
         set1=set(memory)
-        cp_set=set([0,1,2,3,4,5])
+        cp_set=set([0,1,2,3,4,5,6,7,8,9,10]) # This needs to change when map information is changed. IMPORTANT!
         Jipeng = cp_set - set1
         for n in Jipeng:
             Github= time+graph[m][n]
@@ -100,23 +100,41 @@ def criterion(graph, timeInfor, source, set1, node, requests):
                 return trueTableValue
     return trueTableValue
 if __name__ == '__main__':
-    iteration = 7
-    requests = 3
-    timeInfor = [[0,50],
-                [6,14],
-                [12,17],
-                [11,21],
-                [12,22],
-                [17,29],
-                [18,27],
-                [0,50]]
+    iteration = 10
+    requests = 5
+    bigNumber = 1000
+    diagonal = 1.414 # diagonal distance
+    recent = 1 # line distance
+    timeInfor=[[0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber],
+               [0, bigNumber]]
 
-    graph = [[0,2,3,0,0,0,0,0],
-             [0,0,4,5,4,0,0,0],
-             [0,2,0,6,2,0,0,0],
-             [0,0,6,0,3,6,4,0],
-             [0,2,0,9,0,6,8,0],
-             [0,0,0,0,6,0,5,4],
-             [0,0,0,2,0,4,0,7],
-             [0,0,0,0,0,0,0,0]]
+    graph = [[0,diagonal,recent,diagonal,0,0,0,0,0,0,0],
+             [0,0,recent,0,recent,diagonal,0,0,0,0,0],
+             [0,recent,0,recent,diagonal,recent,diagonal,0,0,0,0],
+             [0,0,recent,0,0,diagonal,recent,0,0,0,0],
+             [0,0,diagonal,0,0,recent,0,recent,diagonal,0,0], #4
+             [0,diagonal,0,diagonal,recent,0,recent,diagonal,recent,diagonal,0],
+             [0,0,diagonal,0,0,recent,0,0,diagonal,recent,0], #6
+             [0,0,0,0,0,diagonal,0,0,recent,0,0],
+             [0,0,0,0,diagonal,0,diagonal,recent,0,recent,recent],
+             [0,0,0,0,0,diagonal,0,0,recent,0,diagonal],
+             [0,0,0,0,0,0,0,0,0,0,0]]
     sets = list_all_sets(graph, timeInfor, requests, iteration)
+
+# This verification matches my expectation(a point, if the graph has no feasible route to visit up all nodes, what to do)
+# (Do i need change sth of elimination criterion)
+# What's most important, how to define my EECPP map to get used to this code, and use this code to get the same result as
+# I use Cplex.
+# I need to change the also elimination criterion because I don't have time constraint, and I need to add turning cost
+# and I only have one drone
+# These are too much to handle for today. I am so hungery that I need to go back home before 4 o'clock.
+# I wonder to find out the optimal route in each iteration, time cost or cost, the minimum
