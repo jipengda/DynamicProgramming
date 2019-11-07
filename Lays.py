@@ -138,3 +138,4 @@ if __name__ == '__main__':
 # and I only have one drone
 # These are too much to handle for today. I am so hungery that I need to go back home before 4 o'clock.
 # I wonder to find out the optimal route in each iteration, time cost or cost, the minimum
+# This is why previous 5<-4<-3<-2<-1<-0 is eliminated. This one not solved in my script.
