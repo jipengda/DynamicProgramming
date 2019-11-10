@@ -97,3 +97,9 @@
 # Connectivity among robots. Not related.
 
 # I want to take rest for grading EE202A, prepared in advance.
+
+#16:
+#Dwivedi, Satyam, Dave Zachariah, Alessio De Angelis, and Peter Handel.
+#"Cooperative decentralized localization using scheduled wireless transmissions."
+#IEEE Communications Letters 17, no. 6 (2013): 1240-1243.
+# Localization rather than task allocation. Discard
