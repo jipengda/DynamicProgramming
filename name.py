@@ -195,3 +195,55 @@
 # "MAPP: a scalable multi-agent path planning algorithm with tractability and completeness guarantees."
 # Journal of Artificial Intelligence Research 42 (2011): 55-90.
 # This paper is very strange. It seems good, but i am not sure.
+
+#32
+# Huang, Wesley H. "Optimal line-sweep-based decompositions for coverage algorithms."
+# Proceedings 2001 ICRA. IEEE International Conference on Robotics and Automation (Cat. No. 01CH37164).
+# Vol. 1. IEEE, 2001.
+#This paper is pretty related.Its time cost is exactly appearing and also dynamic programming
+# in the paper I try to implement
+
+#33
+# Di Franco, Carmelo, and Giorgio Buttazzo.
+# "Coverage path planning for UAVs photogrammetry with energy and resolution constraints."
+# Journal of Intelligent & Robotic Systems 83.3-4 (2016): 445-462.
+# A pretty good paper has agricultural picture related to coverage path planning
+
+#34
+# Khan, Amna, Iram Noreen, and Zulfiqar Habib.
+# "On Complete Coverage Path Planning Algorithms for Non-holonomic Mobile Robots: Survey and Challenges."
+# J. Inf. Sci. Eng. 33.1 (2017): 101-121.
+# This paper worth a reading if have time. It mentions map composition, A*, D* and dynmaic programming
+
+#35
+# Englot, Brendan J. Sampling-based coverage path planning for complex 3D structures.
+# Diss. Massachusetts Institute of Technology, 2012.
+# A good thesis for Ph.D, however, sampling-based coverage path planning may not be applied in my project
+
+#36
+# SOLOMON, MARIUS M. "ALGORITHMS FOR THE VEHICLE ROUTING AND SCHEDULING PROBLEMS WITH TIME WINDOW CONSTRAINTS."
+# Operations Research 35.2 (1987): 254-265.
+#Not quite understandable
+
+#37
+# Li, Yang, et al. "A Heuristic Algorithm Based on Tour Rebuilding Operator for the Traveling Salesman Problem."
+#arXiv preprint arXiv:1911.01663 (2019).
+#It mentions dynamic programming in TSp
+
+#38
+# Jackovich, Petar D., Bruce A. Cox, and Raymond R. Hill.
+# "Comparing Greedy Constructive Heuristic Subtour Elimination Methods for the Traveling Salesman Problem."
+# arXiv preprint arXiv:1910.08625 (2019).
+# A very new paper talking about adjacency matrix in the paper. It is worth well reading for good # idea
+
+#39
+# Crişan, Gloria Cerasela, and Elena Nechita.
+# "On a cooperative truck-and-drone delivery system." Procedia Computer Science 159 (2019): 38-47.
+# This one may need reading again. Does the figure in the paper similatr to mine?
+
+# 40
+# Jasim, Sajjad Majeed, and Faez Hassan Ali.
+# "Using Travelling Salesman Principle to Evaluate the Minimum Total Cost of the Iraqi Cities."
+# Ibn AL-Haitham Journal For Pure and Applied Science 32.3 (2019): 95-108.
+# A very interesting paper related to reality, my project and also dynamic programming. Why not give a second shot
+# in the fututre?
