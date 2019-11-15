@@ -226,8 +226,21 @@ if __name__ == '__main__':
                [0,bigNumber],
                [0,bigNumber]]
     sets = list_all_sets(graph, timeInfor, iteration)
-    #This test satisfies my expection.
+    # This test satisfies my expection.
     # However, as mingkun said, what about the turning cost? How to add that part to the function
     # I think I need to define a turning cost function.
     # turning cost depends on three nodes, according to Dr. Mastronarde
     # especially previous two nodes,
+    def turningCost():
+        # turing cost happends when set has at least two codes, the new code will
+        # work as the third code , and the three codes form a turning angle
+        # with previous two nodes
+        # I hope to get a general idea before I go to sleep tonight
+        # Each node have coordinates, use coordinates to get the angle, defined as angle
+        angle={(o,p,q):0 for o,p,q in triple}
+        for o,p,q in triple:
+            angle[(o,p,q)]=math.pi-np.arccos(round((distance[(o,p)]**2+distance[(p,q)]**2-distance[(o,q)]**2)/(2*distance[(o,p)]*distance[(p,q)]),2))
+        # This calculation way seems complex
+        # Maybe i should use a dictionary to store all possible angles data
+        # If needed, look up right turning cost in the dictionary
+        return turningCost
