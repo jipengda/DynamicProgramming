@@ -204,6 +204,9 @@ if __name__ == '__main__':
     l = 1 # line distance between two neighboring nodes
     d = 1.414 # diagonal distance
 
+    # This a 10-node map, numbering from 0 to 9
+    # node 0 is depot, and node 9 is destination
+
     graph=[[0,l,0,0,0,d,0,0,0,0],
            [0,0,l,0,0,l,d,0,0,0],
            [0,l,0,l,0,d,l,0,0,0],
@@ -243,4 +246,7 @@ if __name__ == '__main__':
         # This calculation way seems complex
         # Maybe i should use a dictionary to store all possible angles data
         # If needed, look up right turning cost in the dictionary
+        # Should I store each node's coordinates in a matrix or in a dictionary
+
+
         return turningCost
