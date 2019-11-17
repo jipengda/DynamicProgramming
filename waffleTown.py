@@ -45,3 +45,6 @@ for i in cnodes:
 for n in cnodes:
     mdl.add_constraint(mdl.sum(x[(i,j)] for i,j in arcos j==n)==mdl.sum(x[(j,k)] for j,k in arcos if j==n), \
     ctname='arrive and leave the same depot')
+# I hope to get an idea durimg my study at UB preparing homework 8 for the coming Monday by glaring cplex at the desktop
+# !!
+# I only need to refer #1 #2 #3 #4 in Do.py. And if I want to be better, maybe also the late part of drawing the figure.
