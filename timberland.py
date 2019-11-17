@@ -9,7 +9,7 @@
 
 
 # list_all_sets function is doing to list out optimal routes information(what nodes are visited in which order)
-# (final time cost, final distance cost, and teriminal node information ) 
+# (final time cost, final distance cost, and teriminal node information )
 # within given number of iterations
 def list_all_sets(graph, timeInfor, requests, iteration):
     source=[0]
@@ -97,8 +97,8 @@ def criterion(graph, timeInfor, source, set1, node, requests):
     if node-requests not in source and node >= requests: # criterion #2, pick up node should have been visited before new node
         trueTableValue = False
         return trueTableValue
-    memory=set1
-    length=len(memory)
+    memory = set1
+    length = len(memory)
     time = timeInfor[0][0]
     for i in range(length-1):
         m=memory[i]
