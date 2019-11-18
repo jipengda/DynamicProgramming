@@ -9,12 +9,13 @@ N = 6
 depot = 0
 destination = 5
 requests = 2
-distance = [[0,2,3,0,0,0],
-            [0,0,4,5,4,0],
-            [0,2,0,6,2,0],
-            [0,0,6,0,3,4],
-            [0,2,0,9,0,7],
-            [0,0,0,0,0,0]]
+test = math.inf
+distance = [[test,2,3,test,test,test],
+            [test,test,4,5,4,test],
+            [test,2,test,6,2,test],
+            [test,test,6,test,3,4],
+            [test,2,test,9,test,7],
+            [test,test,test,test,test,test]]
 timeInfor = [[0,30],
              [6,14],
              [12,17],
@@ -48,3 +49,6 @@ for n in cnodes:
 # I hope to get an idea durimg my study at UB preparing homework 8 for the coming Monday by glaring cplex at the desktop
 # !!
 # I only need to refer #1 #2 #3 #4 in Do.py. And if I want to be better, maybe also the late part of drawing the figure.
+# One question: how to define the time when agent arrive a node, the time should be bigger one of arriving time and left visiting time
+# why not have a test first? i hope to have an idea of this project
+# I need to switch to windows because i don't have cplex in Mac
