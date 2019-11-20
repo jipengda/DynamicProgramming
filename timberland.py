@@ -20,8 +20,8 @@ def list_all_sets(graph, timeInfor, requests, iteration):
     labelInforTime=0
     labelInforCost=0
     for i in graph[row]:
-        labelInforTime=0
-        labelInforCost=0
+        labelInforTime = 0
+        labelInforCost = 0
         set1 = source
         node = node + 1
         if(i != 0):
@@ -30,7 +30,7 @@ def list_all_sets(graph, timeInfor, requests, iteration):
             labelInforTime = labelInforTime + i
             labelInforCost = labelInforCost + i
             labelInforTime = max(labelInforTime, timeInfor[node][0])
-            set1 = set1+[[labelInforTime, labelInforCost]]
+            set1 = set1 + [[labelInforTime, labelInforCost]]
             sets.append(set1)
             print("label number:", labelNumber)
             print(set1)
